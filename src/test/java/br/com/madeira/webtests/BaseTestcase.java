@@ -8,8 +8,8 @@ import org.junit.BeforeClass;
 import org.openqa.selenium.WebDriver;
 
 import br.com.madeira.pageObjects.HomePage;
+import br.com.madeira.pageObjects.Navegador;
 import br.com.madeira.runners.AllTests;
-import br.com.madeira.utils.Selenium;
 import br.com.madeira.utils.dbconnection;
 
 /**
@@ -30,7 +30,8 @@ public class BaseTestcase {
 	public static void beforeClass() throws Exception {
 		startTime = System.currentTimeMillis();		
 		if (!AllTests.isAllTestsExecution) {
-			driver = Selenium.getDriver();
+//			driver = Selenium.getDriver();
+			Navegador.abrirChrome();
 			driver.manage().window().maximize();	
 			dbconnection db = new dbconnection();
 			db.clean();

@@ -31,7 +31,6 @@ public class BaseTestcase {
 		startTime = System.currentTimeMillis();		
 		if (!AllTests.isAllTestsExecution) {
 			driver = Selenium.getDriver();
-//			Navegador.abrirChrome();
 			driver.manage().window().maximize();	
 			dbconnection db = new dbconnection();
 			db.clean();

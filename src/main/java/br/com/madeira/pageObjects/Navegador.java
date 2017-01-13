@@ -7,9 +7,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.phantomjs.PhantomJSDriver;
 
-import br.com.madeira.webtests.*;
+import br.com.madeira.webtests.BaseTestcase;
+import br.com.madeira.webtests.NavegadorUtilizado;
 
-public class Navegador {
+public class Navegador extends BaseTestcase{
 
 	protected static WebDriver driver;
 	private static NavegadorUtilizado navegadorUtilizado;

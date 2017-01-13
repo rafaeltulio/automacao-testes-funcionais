@@ -6,9 +6,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-import br.com.madeira.webtests.*;
-
-public class dbconnection extends BaseTestcase {
+public class dbconnection {
 
 	private static String dbUrl;
 	private static String username;

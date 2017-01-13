@@ -7,7 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.phantomjs.PhantomJSDriver;
 
-import br.com.madeira.webtests.NavegadorUtilizado;
+import br.com.madeira.webtests.*;
 
 public class Navegador {
 

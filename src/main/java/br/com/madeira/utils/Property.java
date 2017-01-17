@@ -29,7 +29,7 @@ public class Property {
 
 	static {
 		
-		System.out.println(CHROME_DRIVE_PATH = new File("").getAbsolutePath() + "/src/main/resources/chromedriver");
+		System.out.println(CHROME_DRIVE_PATH = new File("").getAbsolutePath() + "/root/node_modules/chromedriver/lib/chromedriver/chromedriver");
 		IE64_DRIVE_PATH = new File("").getAbsolutePath() + "/src/main/resources/IEDriverServer.exe";
 		FIREFOX_DRIVE_PATH = new File("").getAbsolutePath() + "%PROGRAMFILES%\\Mozilla Firefox\\firefox.exe";
 		BROWSER_NAME = get("browser.name");

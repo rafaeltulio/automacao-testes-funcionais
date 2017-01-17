@@ -13,8 +13,6 @@ import br.com.madeira.runners.NegativeSuiteRunner;
 import br.com.madeira.utils.Property;
 
 import com.opencsv.CSVReader;
-import com.relevantcodes.extentreports.ExtentReports;
-import com.relevantcodes.extentreports.LogStatus;
 
 /**
  * @author ti-16 CLASSE PARA VALIDAR CADASTRO DE CLIENTES

@@ -40,23 +40,23 @@ public class CompraPageValidationTest extends BaseTestcase {
 	 * @throws Exception
 	 */
 
-	@Test
-	public void compraProdutoPessoaFisica() {
-
-		resultadoProdutoPage = HomePage.preencherFiltroPesquisa("146874");
-		resultadoProdutoPage.validaUrlProduto();
-		resultadoProdutoPage.clicarProduto();
-		carrinhoProduto = resultadoProdutoPage.adicionarCarrinho();
-		fechamentoPage = carrinhoProduto.finalizarCompra();
-		fechamentoPage.efetuarLogin("teste@madeiramadeira.com.br", "teste");
-		fechamentoPage.validarPageFechamento();
-		fechamentoPage.gerarBoleto();
-		boletoGeradoPage = fechamentoPage.clicarFinalizarCompra();
-		boletoGeradoPage.resumoPedido();
-		boletoGeradoPage.visualizarBoleto();
-		boletoGeradoPage.capturaDadosBoleto();
-
-	}
+//	@Test
+//	public void compraProdutoPessoaFisica() {
+//
+//		resultadoProdutoPage = HomePage.preencherFiltroPesquisa("146874");
+//		resultadoProdutoPage.validaUrlProduto();
+//		resultadoProdutoPage.clicarProduto();
+//		carrinhoProduto = resultadoProdutoPage.adicionarCarrinho();
+//		fechamentoPage = carrinhoProduto.finalizarCompra();
+//		fechamentoPage.efetuarLogin("teste@madeiramadeira.com.br", "teste");
+//		fechamentoPage.validarPageFechamento();
+//		fechamentoPage.gerarBoleto();
+//		boletoGeradoPage = fechamentoPage.clicarFinalizarCompra();
+//		boletoGeradoPage.resumoPedido();
+//		boletoGeradoPage.visualizarBoleto();
+//		boletoGeradoPage.capturaDadosBoleto();
+//
+//	}
 
 	
 	@AfterClass

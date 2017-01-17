@@ -31,7 +31,7 @@ public class Selenium {
 		if (driver == null) {
 			if (Browser.CHROME.equals(browser)) {
 				File file = new File(Property.CHROME_DRIVE_PATH);
-				System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
+				System.setProperty("webdriver.chrome.driver", "/root/node_modules/chromedriver/lib/chromedriver/chromedriver");
 				driver = new ChromeDriver();
 			}
 

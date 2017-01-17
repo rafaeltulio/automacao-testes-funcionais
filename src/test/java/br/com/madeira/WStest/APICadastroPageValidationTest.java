@@ -40,8 +40,8 @@ public class APICadastroPageValidationTest {
 			.assertThat()
 				.statusCode(200)
 				.contentType(ContentType.JSON)
-				.body("status", equalTo(200))
-				.body("message", containsString("CPF n\u00e3o cadastrado"));
+				.body("status", equalTo(204))
+				.body("message", containsString("CPF j\u00e1 cadastrado"));
 	}
 }
 

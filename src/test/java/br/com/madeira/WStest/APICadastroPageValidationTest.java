@@ -24,7 +24,7 @@ public class APICadastroPageValidationTest {
 			.get()
 		.then().log().all()
 			.assertThat()
-				.statusCode(200)
+				.statusCode(204)
 				.contentType(ContentType.JSON)
 				.body("status", equalTo(200))
 				.body("message", containsString("CPF n\u00e3o cadastrado"));

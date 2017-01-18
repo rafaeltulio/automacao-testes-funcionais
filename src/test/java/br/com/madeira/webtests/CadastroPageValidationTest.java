@@ -230,24 +230,4 @@ public class CadastroPageValidationTest extends BaseTestcase {
 			System.out.println("\n");
 		}
 	}
-
-	/**
-	 * OBJETIVO: VALIDAR MENSAGEM ALERTA PARA PESSOA FISICA JÁ CADASTRADO
-	 * 
-	 * @throws Exception
-	 */
-	@Test
-	public void testEfetuarCadastroCPFUtilizado() {
-
-	}
-
-	/**
-	 * OBJETIVO: VALIDAR MENSAGEM ALERTA PARA PESSOA JURIDICA JÁ CADASTRADO
-	 * 
-	 * @throws Exception
-	 */
-	@Test
-	public void testEfetuarCadastroCNPJUtilizado() {
-
-	}
 }

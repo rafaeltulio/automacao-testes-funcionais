@@ -9,7 +9,7 @@ import org.openqa.selenium.WebDriver;
 import br.com.madeira.utils.Property;
 import br.com.madeira.utils.Selenium;
 import br.com.madeira.webtests.CadastroPageValidationTest;
-import br.com.madeira.webtests.CompraPageValidationTest;
+import br.com.madeira.webtests.FretePageValidationTest;
 
 /**
  * Classe que agrupa todas as classes de teste, funcionando com uma suíte de
@@ -20,7 +20,7 @@ import br.com.madeira.webtests.CompraPageValidationTest;
  */
 @RunWith(Suite.class)
 @Suite.SuiteClasses({ 
-	CompraPageValidationTest.class, 
+	FretePageValidationTest.class, 
 	CadastroPageValidationTest.class,
 
 	})

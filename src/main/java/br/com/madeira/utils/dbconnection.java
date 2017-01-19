@@ -38,9 +38,9 @@ public class dbconnection {
 			Statement stmt = con.createStatement();
 			ResultSet rs = stmt.executeQuery(query);
 			System.out.println(query);
-			System.out.println("Exclusão de Cadastro na Base de Dados!");
+			System.out.println("Exclusão de Cadastro na Base de Dados!\n");
 			con.close();
-		} // end try
+		}
 
 		catch (ClassNotFoundException e) {
 			e.printStackTrace();

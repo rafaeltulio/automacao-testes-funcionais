@@ -6,7 +6,7 @@ import java.util.Properties;
 public class Configuracoes {
 	public static String lerConfiguracao(String chaveConfiguracao) throws IOException {
 		Properties properties = new Properties();
-		FileInputStream file = new FileInputStream("src/test/resources/ConfiguracoesPRD.properties");
+		FileInputStream file = new FileInputStream("br/com/madeira/properties/config.properties");
 		properties.load(file);
 		System.out.println("Lendo a chave " + chaveConfiguracao);
 		return properties.getProperty(chaveConfiguracao);

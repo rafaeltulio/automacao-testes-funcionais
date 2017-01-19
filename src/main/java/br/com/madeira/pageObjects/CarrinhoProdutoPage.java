@@ -12,13 +12,13 @@ import br.com.madeira.utils.Selenium;
 public class CarrinhoProdutoPage {
 
 	/**
-	 * Inst�ncia privada do webDriver que vira da suite de teste
+	 * Instância privada do webDriver que vira da suite de teste
 	 */
 
 	private static WebDriver driver;
 	private static WebDriverWait wait;
 	/**
-	 * Construtor que ira adicionar a inst�ncia do WebDriver para utilizacao dos
+	 * Construtor que ira adicionar a instância do WebDriver para utilizacao dos
 	 * metodos
 	 */
 	static {
@@ -27,7 +27,7 @@ public class CarrinhoProdutoPage {
 	}
 
 	/**
-	 * Defini��o �nica dos locators utilizados na p�gina
+	 * Definição única dos locators utilizados na página
 	 */
 	
 	static By buttonFinalizarCompraCarrinho = By.id("btnFinalizarCompra");
@@ -36,7 +36,7 @@ public class CarrinhoProdutoPage {
 		}	
 	
 	/**
-	 * Clicar no bt�o Finalizar Compra
+	 * Clicar no botão Finalizar Compra
 	 * @return FechamentoPage
 	 */
 
@@ -44,8 +44,15 @@ public class CarrinhoProdutoPage {
 		wait.until(ExpectedConditions.visibilityOfElementLocated(buttonFinalizarCompraCarrinho));
 		WebElement buttonFinalizaCompra = driver.findElement(buttonFinalizarCompraCarrinho);
 		buttonFinalizaCompra.click();
-		System.out.println("Clicado no Bot�o Finalizar Compra na P�gina de Carrinho!");		
+		System.out.println("Clicado no Bot�o Finalizar Compra na Página de Carrinho!");		
 		return new FechamentoPage();
+	}
+
+	public void clicarButtonCalcularFrete() {
+		WebElement btnCalculaFrete = driver.findElement(By.id("calc_frete"));
+		btnCalculaFrete.click();
+		System.out.println("Clicar no botão Calcular Frete!");
+		
 	}
 
 }

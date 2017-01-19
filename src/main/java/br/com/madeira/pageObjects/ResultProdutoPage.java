@@ -2,10 +2,13 @@ package br.com.madeira.pageObjects;
 
 import org.junit.*;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+
 
 
 import br.com.madeira.utils.Property;
@@ -52,7 +55,7 @@ public class ResultProdutoPage {
 	}
 
 	public void clicarProduto() {
-		WebElement linkProd = driver.findElement(By.xpath("//img[@alt='Painel para TV Capri L�nea Brasil Chocolate Wood']"));
+		WebElement linkProd = driver.findElement(By.xpath("//img[@Painel para TV Capri Línea Brasil Chocolate Wood']"));
 		linkProd.click();
 		System.out.println("Clicado no Link do Produto para adicionar ao carrinho!");
 
@@ -63,6 +66,16 @@ public class ResultProdutoPage {
 		WebElement buttonAdicionarCarrinho = driver.findElement(buttonCarrinho);
 		buttonAdicionarCarrinho.click();
 		System.out.println("Clicado no bot�o Adicionar Carrinho!");
+		return new CarrinhoProdutoPage();
+	}
+
+	public CarrinhoProdutoPage preencherFrete(String frete) {
+		wait.until(ExpectedConditions.visibilityOfElementLocated(buttonCarrinho));
+		WebElement inputFrete = driver.findElement(By.id("cep"));
+		inputFrete.clear();
+		inputFrete.sendKeys(frete);
+		inputFrete.sendKeys(Keys.TAB);
+		System.out.println("Preenchido Freete para Cotação!" +frete);		
 		return new CarrinhoProdutoPage();
 	}
 

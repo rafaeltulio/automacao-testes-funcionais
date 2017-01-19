@@ -5,6 +5,7 @@ package br.com.madeira.pageObjects;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -12,6 +13,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import br.com.madeira.utils.Property;
 import br.com.madeira.utils.Selenium;
 
 /**
@@ -48,6 +50,7 @@ public class HomePage {
 	static By buttonEntrar = By.xpath("//form[@id='formLogin']/div/div[2]/button");
 	static By linkSair = By.xpath("//a[contains(text(),'Sair')]");
 	static By titleLinkcorrect = By.xpath("/html/body/div[2]/header/div[2]/div/div/div/div/span[2]/a");
+	String urlAcessoDefault = Property.SITE_ADDRESS;
 
 	public HomePage() {
 	}
@@ -104,6 +107,11 @@ public class HomePage {
 		campoBusca.sendKeys(Keys.ENTER);
 		System.out.println("Preencher campo de Pesquisa com Identificador do Produto! "+identificador);		
 		return new ResultProdutoPage();
+	}
+
+	public void navegarURLProduto() {
+		driver.navigate().to(urlAcessoDefault+"/painel-para-tv-capri-linea-brasil-146874.html");
+		System.out.println("Acessando URL: "+urlAcessoDefault);			
 	}
 	
 }

@@ -1,0 +1,11 @@
+br\com\madeira\runners\NegativeSuiteRunner.class
+br\com\madeira\webtests\CompraPageValidationTest.class
+br\com\madeira\categories\NegativeTests.class
+br\com\madeira\runners\PositiveSuiteRunner.class
+br\com\madeira\runners\AllTests.class
+br\com\madeira\webtests\BaseTestcase.class
+br\com\madeira\WStest\APICadastroPageValidationTest.class
+br\com\madeira\categories\RegressionTests.class
+br\com\madeira\runners\RegressionSuiteRunner.class
+br\com\madeira\webtests\CadastroPageValidationTest.class
+br\com\madeira\categories\PositiveTests.class

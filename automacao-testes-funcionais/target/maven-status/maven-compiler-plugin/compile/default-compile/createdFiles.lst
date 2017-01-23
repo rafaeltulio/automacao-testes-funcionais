@@ -1,0 +1,12 @@
+br\com\madeira\pageObjects\CadastroPage.class
+br\com\madeira\utils\dbconnection.class
+br\com\madeira\pageObjects\ResultProdutoPage.class
+br\com\madeira\pageObjects\AreaVipPage.class
+br\com\madeira\pageObjects\CarrinhoProdutoPage.class
+br\com\madeira\utils\Browser.class
+br\com\madeira\pageObjects\HomePage.class
+br\com\madeira\utils\Property.class
+br\com\madeira\pageObjects\BoletoPage.class
+br\com\madeira\pageObjects\Configuracoes.class
+br\com\madeira\utils\Selenium.class
+br\com\madeira\pageObjects\FechamentoPage.class
